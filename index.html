@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GetEducate - Unlock Your Earning Potential</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span>GetEducate</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav">
+        <p class="nav-text">Empower your career
+          <a class="apply-btn" href="/portfolio/" title="Apply">Apply +</a>
+        </p>
+
+        <a href="#features">Our Mission</a>
+        <a href="#testimonials">Success Stories</a>
+        <a href="#contact">Contact</a>
+
+        <div class="header-buttons" id="headerButtons">
+          <a href="auth.html" class="btn btn-ghost">Login</a>
+          <a href="auth.html" class="btn btn-primary">Careers</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <div class="hero-content">
+        <div class="hero-badge">Transform Your Future Today</div>
+        <h1 class="hero-title">Unlock Your Earning Potential with High-Income Skills</h1>
+        <p class="hero-subtitle">Join thousands who've turned ambitions into reality through expert-led training and a thriving community.</p>
+        <div class="hero-cta">
+          <a href="auth.html" class="btn btn-primary btn-large">Start Your Journey</a>
+          <a href="#features" class="btn btn-secondary btn-large">Learn More</a>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1" alt="Team collaboration" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-container">
+        <p id="quote" class="quote-text active">"On the average, five times as many people read the headline as read the body copy." — David Ogilvy</p>
+      </div>
+    </section>
+
+    <section id="features" class="section features-section">
+      <div class="container">
+        <h2 class="text-center">Our Mission</h2>
+        <p class="lead">We help learners acquire high-income skills and match them with career opportunities.</p>
+        <div class="features-grid">
+          <div class="feature">
+            <i class="bx bx-rocket feature-icon"></i>
+            <h3>Fast Results</h3>
+            <p>Practical training designed to get you working faster.</p>
+          </div>
+          <div class="feature">
+            <i class="bx bx-group feature-icon"></i>
+            <h3>Community</h3>
+            <p>Peer support and networking to accelerate your growth.</p>
+          </div>
+          <div class="feature">
+            <i class="bx bx-briefcase-alt feature-icon"></i>
+            <h3>Jobs</h3>
+            <p>Direct pathways to vetted roles with partner companies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs" class="section jobs-section">
+      <div class="container">
+        <h2>Open Roles</h2>
+        <p>Click any role to view portfolio & projects that relate to the role.</p>
+        <ul id="job-list" class="job-list">
+          <li class="job-item" data-target="/portfolio/">Frontend Developer — Company A</li>
+          <li class="job-item" data-target="/portfolio/">UI/UX Designer — Company B</li>
+          <li class="job-item" data-target="/portfolio/">Intern — Company C</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <h2 class="text-center">Success Stories</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>"I landed a remote role within 3 months." — Alex</p>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"The projects built here were the difference." — Sam</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Questions? Email <a href="mailto:hello@geteducate.example">hello@geteducate.example</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; GetEducate — All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

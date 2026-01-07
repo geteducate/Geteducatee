@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Application — GetEducate</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container section application-form">
+    <h1>Application</h1>
+    <form id="applicationForm" onsubmit="submitApplication(event)">
+      <label>
+        Full name
+        <input id="appName" required />
+      </label>
+      <label>
+        Email
+        <input id="appEmail" type="email" required />
+      </label>
+      <label>
+        Link to portfolio or GitHub
+        <input id="appPortfolio" placeholder="https://..." />
+      </label>
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+  </main>
+
+  <script>
+    function submitApplication(e){
+      e.preventDefault();
+      // Minimal demonstration behavior: store and redirect to success page
+      const name = document.getElementById('appName').value;
+      localStorage.setItem('lastApplicant', JSON.stringify({ name, date: Date.now() }));
+      location.href = 'success.html';
+    }
+  </script>
+</body>
+</html>

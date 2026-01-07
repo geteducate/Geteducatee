@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — GetEducate</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container auth-page">
+    <h1>Login / Sign Up</h1>
+
+    <form id="authForm" onsubmit="handleAuth(event)">
+      <label>
+        Email
+        <input id="email" type="email" required />
+      </label>
+
+      <label>
+        Full name (optional)
+        <input id="fullname" type="text" />
+      </label>
+
+      <button type="submit" class="btn btn-primary">Continue</button>
+    </form>
+  </main>
+
+  <script>
+    function handleAuth(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const name = document.getElementById('fullname').value;
+      localStorage.setItem('currentUser', email);
+      if (name) localStorage.setItem('currentUsername', name);
+      updateHeaderAuth();
+      location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
